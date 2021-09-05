@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT FORM</title>
+    <link rel="stylesheet" href="./payment_form.css">
+</head>
+<body>
+    <div class="container">
+    <span>WELCOME TO PAYMENT GATEWAY OF SBI BANK LTD</span> <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/SBI-logo.svg" alt="sbi" width="10%"><br> 
+    <hr>
+    <br>
+<form action="page2.html">
+<p>
+    required fields are followed by *
+</p>
+    <h2>USER DETAILS</h2>
+NAME : * <input type="text" name="name" required placeholder="pranshu jain" > <br> <br>
+<fieldset>
+    <legend>GENDER</legend><p>
+    GENDER * : &nbsp; MALE <input type="radio" name="gender" id="gen"> &nbsp; FEMALE <input type="radio" name="gender" id="gen1"> 
+</p></fieldset>
+ 
+    <p>
+        Address: </p>
+        <p><textarea name="address" id="addr" cols="30" rows="10" placeholder="enter your address" required></textarea>
+</p>
+<p>
+    EMAIL : *<input type="email" name="email" id="email" required placeholder="pranshu@gmail.com">
+</p> 
+<p>
+    PINCODE :* <input type="number" name="pincode" required  placeholder="110032">
+</p>
+<hr><hr>
+<br>
+
+<h2>PAYMENT DETAILS</h2>
+<br>
+<hr>
+<p>
+    CARD TYPE :* <select name="card" id="cardtype" required >
+        <option value="">--Select a Card Type--</option>
+        <option value="visa"> VISA</option>
+        <option value="rupay">RUPAY</option>
+        <option value="mastercard">MASTERCARD</option>
+        <option value="hsbc">HSBC</option>
+    </select>
+</p>
+<br>
+<p>
+    CARD NUMBER :* <input type="number" name="cardnum" required placeholder="1234 5678 7890"> 
+</p>
+<br>
+<p>
+    EXPIRATION DATE :* <input type="date" name="exdate" id="exd" required placeholder="12/2021">
+</p>
+<br>
+<p>
+    CVV : *<input type="password" name="cvv" id="cvv" required placeholder="123">
+</p>
+<br>
+<input type="submit" value="PAY NOW"> <br><br>
+<input type="reset" value="RESET">
+
+</form>
+</div>
+</body>
+</html>
